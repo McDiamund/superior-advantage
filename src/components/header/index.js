@@ -18,11 +18,13 @@ function Header() {
 
         {/* Logo */}
 
-        <div className={styles.logoContainer}>
-          <div className={styles.logo}>
-            <img src={logo} />
+        <Link to="/">
+          <div className={styles.logoContainer}>
+            <div className={styles.logo}>
+              <img src={logo} />
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Navigation Bar */}
 

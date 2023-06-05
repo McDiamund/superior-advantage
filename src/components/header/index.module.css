@@ -16,6 +16,8 @@
 .logoContainer {
     width: 40%;
     height: 80px;
+
+    cursor: pointer;
 }
 
 .logo {
