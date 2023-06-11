@@ -182,4 +182,17 @@
     background-size: cover;
 }
 
+.aboutContent {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.aboutContent p {
+    font-family: 'Jost';
+    color: white;
+}
+
+.aboutText {
+    font-size: 25px;
+}
 

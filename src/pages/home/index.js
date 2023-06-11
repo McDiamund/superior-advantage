@@ -57,6 +57,13 @@ function Home() {
             <div className={styles.aboutContainer}>
 
                 <div className={styles.textBackground}>
+
+                    <div className={styles.aboutContent}>
+                        
+                        <p className={styles.aboutText}>We proudly service all of Georgia from Metropolitan Altana, Houston, Bibb, Peach county and more. We are here to help. <br/>
+                        Our services includes buying and selling homes, HUD assistance, REO assistance and we are also Short Sale Specialists.</p>
+
+                    </div>
                     
                 </div>
 
