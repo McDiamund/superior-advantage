@@ -60,11 +60,52 @@ function Home() {
 
                     <div className={styles.aboutContent}>
                         
-                        <p className="text-sm">We proudly service all of Georgia from Metropolitan Altana, Houston, Bibb, Peach county and more. We are here to help. <br/>
+                        <p>We proudly service all of Georgia from Metropolitan Altana, Houston, Bibb, Peach county and more. We are here to help. <br/>
                         Our services includes buying and selling homes, HUD assistance, REO assistance and we are also Short Sale Specialists.</p>
+
+                        <div className={styles.aboutInfo}>
+                            <p>SOUTH GEORGIA | 478-862-9533</p>
+                            <p>EMAIL | officemanager@superioradvantage-re.com</p>
+                            <p>ATLANTA REGION | 404-421-4560</p>
+                        </div>
+
+                        <div className={styles.contactButton}>
+                            <p>CONTACT US</p>
+                        </div>
 
                     </div>
                     
+                </div>
+
+            </div>
+
+            <div className={styles.testimonialsContainer}>
+
+                <div className={styles.testimonialsGrid}>
+
+                    <div className={styles.testimonialOne}>
+                        <p>K & W</p>
+                    </div>
+
+                    <div className={styles.testimonialTwo}>
+                        <p>STEVEN</p>
+                    </div>
+
+                    <div className={styles.testimonialThree}>
+                        <p>THOMAS</p>
+                    </div>
+
+                </div>
+
+                <div className={styles.testimonialContent}>
+                    <div className={styles.content}>
+                        <p className={styles.tcHeader}>You're in good company.</p>
+                        <p className={styles.tcSubHeading}>HERE ARE WORDS FROM OUR CLIENTS</p>
+                        <div className={styles.tcAccentImage}></div>
+                    </div>
+                    <div className={styles.tooltip}>
+                        <p>HOVER TO SEE</p>
+                    </div>
                 </div>
 
             </div>
