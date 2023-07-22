@@ -211,6 +211,9 @@
 
     cursor: pointer;
 
+    position: absolute;
+    z-index: 5;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,4 +381,197 @@
 
     margin-left: 20px;
     margin-bottom: 10px;
+}
+
+/* Our Team */
+
+.teamSection {
+    width: 100%;
+}
+
+.teamSection .container {
+    display: flex;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.teamSection .row {
+    width: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.teamHeader {
+    margin-bottom: 50px;
+
+    font-family: Georgia;
+    font-size: 50px;
+}
+
+.teamAccentBar {
+    width: 220px;
+    height: 15px;
+
+    background-color: black;
+
+    margin-top: 10px;
+}
+
+.teamCol .teamImage {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+
+.teamCol .name {
+
+    margin-top: 10px;
+
+    font-family: Jost;
+    font-size: 25px;
+}
+
+.teamCol .title {
+    font-family: Jost;
+}
+
+/* Surplus Section */
+
+.surplusSection {
+    width: 100%;
+
+    background: url(../../assets/surplusBackground.png);
+    background-size: cover;
+}
+
+.surplusSection .container {
+
+    padding: 2% 10% 1% 1%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.surplusSection .container .details {
+    color: white;
+
+    font-family: Jost;
+    font-size: 20px;
+}
+
+/* Contact Section */
+
+.contactSection {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+}
+
+.contactSection .contactMap {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .contactMap .map {
+    flex-grow: 1;
+    background-color: bisque;
+}
+
+.contactSection .contactMap .footer {
+    height: 50px;
+
+    padding: 0% 2% 0% 2%;
+
+    background-color: #323232;
+
+    font-family: Jost;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contactSection .contactForm {
+    width: 55%;
+    background-color: #0f499d;
+
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSection .contactForm .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactSection .contactForm .container form {
+    width: 500px;
+}
+
+.contactSection .contactForm .container  label {
+    font-family: Jost;
+    color:  white;
+    padding: 10px 0px 5px 0px;
+}
+
+.contactHeader {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 60px;
+}
+
+.contactInfo {
+    text-align: center;
+    color: white;
+    font-family: Jost;
+    font-size: 20px;
+}
+
+.formInput {
+    padding: 0px 5px 0px 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput input {
+    padding: 5px;
+}
+
+.formInput textarea {
+    padding: 5px;
+}
+
+.contactSubmit {
+    width: 100%;
+    height: 20px;
+
+    font-size: 20px;
+    font-family: Jost;
+    background-color: #e62528;
+    color: white;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
