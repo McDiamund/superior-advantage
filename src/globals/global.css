@@ -9,10 +9,6 @@
     scroll-behavior: smooth;
 }
 
-p {
-    margin-bottom: 0 !important;
-}
-
 /* Font Styling */
 
 @font-face {

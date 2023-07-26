@@ -2,14 +2,14 @@ import './globals/global.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header'
 import Home from './pages/home'
+import Surplus from 'pages/surplus';
 
 function App() {
   return (
     <BrowserRouter>
        <Routes>
-          <Route path='/' element={<Header />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route index element={<Home />} />
+          <Route path='/surplus' element={<Surplus />} />
        </Routes>
     </BrowserRouter>
   );
