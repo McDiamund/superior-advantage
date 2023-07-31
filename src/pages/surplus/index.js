@@ -1,273 +1,143 @@
-import styles from './index.module.css';
-import downArrow from 'assets/down-arrow.svg';
-import realtorLogo from 'assets/realtor-logo.png';
-import equalHousing from 'assets/equal-housing.webp';
-import surplusAsset from 'assets/surplus.png';
-import JR from 'assets/JR.png';
-import RT from 'assets/RT.jpg';
-import DG from 'assets/DG.jpg';
-import AE from 'assets/AE.jpg';
-import ET from 'assets/1649097022047.jfif';
+import styles from "./index.module.css";
+import downArrow from "assets/down-arrow.svg";
+import realtorLogo from "assets/realtor-logo.png";
+import equalHousing from "assets/equal-housing.webp";
+import surplusAsset from "assets/surplus.png";
+import JR from "assets/JR.png";
+import RT from "assets/RT.jpg";
+import DG from "assets/DG.jpg";
+import AE from "assets/AE.jpg";
+import ET from "assets/1649097022047.jfif";
 
 function Surplus() {
-
-    const scrollDown = () => {
-        var i = 10;
-        var int = setInterval(function() {
-            window.scrollBy(0, i);
-            i += 10;
-            if (i >= 200) clearInterval(int);
-        }, 20);
-    }
-    
-    return(
-        <div className={styles.homeContainer}>
-
-            <div className={styles.heroContainer}>
-                <div className={styles.heroTitleContainer}>
-                    <div className={styles.heroTitleCard}>
-                        <p className={styles.heroTitle}>"I'm <span className={styles.heroUnderline}>NOT</span> ready to leave my home right now. <br/></p>
-                        <div className={styles.heroAccentBar}></div>
-                        <p className={styles.heroSubTitle}>I need a solution that may buy me at least 2 to 6 months more to stay in my home.</p>
-                        <div className={styles.heroButtons}>
-                            <div className={styles.heroButtonSecondary}>
-                                <p>BUY MORE TIME</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{ flexGrow: 1 }} />
-                    <div className={styles.actions}>
-
-                        <div className={styles.downArrow} onClick={scrollDown}>
-                            <img src={downArrow} />
-                        </div>
-
-                        <div className={styles.badges}>
-
-                            <div className={styles.badge}>
-                                <img src={realtorLogo} width={50}/>
-                            </div>
-
-                            <div className={styles.badge}>
-                                <img src={equalHousing} width={60}/>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.heroImage}></div>
-            </div>
-
-            <div className={styles.aboutContainer}>
-
-
-            </div>
-
-            <div className={styles.testimonialsContainer}>
-
-                <div className={styles.testimonialsGrid}>
-
-                    <div className={styles.testimonialOne}>
-                        <p>K & W</p>
-                    </div>
-
-                    <div className={styles.testimonialTwo}>
-                        <p>STEVEN</p>
-                    </div>
-
-                    <div className={styles.testimonialThree}>
-                        <p>THOMAS</p>
-                    </div>
-
-                </div>
-
-                <div className={styles.testimonialContent}>
-                    <div className={styles.content}>
-                        <p className={styles.tcHeader}>You're in good company.</p>
-                        <p className={styles.tcSubHeading}>HERE ARE WORDS FROM OUR CLIENTS</p>
-                        <div className={styles.tcAccentImage}></div>
-                    </div>
-                    <div className={styles.tooltip}>
-                        <p>HOVER TO SEE</p>
-                    </div>
-                </div>
-
-            </div>
-
-            
-            <div className={styles.teamSection}>
-
-                <div className={styles.container}>
-
-                    <div>
-
-                        <div className={styles.teamHeader}>
-                            <p>Meet the Team</p>
-                            <div className={styles.teamAccentBar}></div>
-                        </div>
-
-                        <div className={styles.row}>
-
-                            <div className={styles.teamCol}>
-                                
-                                <div className={styles.teamImage} style={{
-                                    background: `url(${JR})`,
-                                    backgroundSize: "cover"
-                                }}></div>
-
-                                <p className={styles.name}>Jacqueline R.</p>
-                                <p className={styles.title}>Prinicipal Broker</p>
-
-                            </div>
-
-                            <div className={styles.teamCol}>
-                                
-                                <div className={styles.teamImage} style={{
-                                    background: `url(${RT})`,
-                                    backgroundSize: "cover"
-                                }}></div>
-
-                                <p className={styles.name}>Raymond T.</p>
-                                <p className={styles.title}>Credit Counselor & <br/> Down Payment Specialist</p>
-
-                            </div>
-
-                            <div className={styles.teamCol}>
-                                
-                                <div className={styles.teamImage} style={{
-                                    background: `url(${DG})`,
-                                    backgroundSize: "cover"
-                                }}></div>
-
-                                <p className={styles.name}>Devany G.</p>
-                                <p className={styles.title}>Luxury Homes & <br/> International Relocation</p>
-
-                            </div>
-
-                            <div className={styles.teamCol}>
-                                
-                                <div className={styles.teamImage} style={{
-                                    background: `url(${AE})`,
-                                    backgroundSize: "cover"
-                                }}></div>
-
-                                <p className={styles.name}>Alisa E.</p>
-                                <p className={styles.title}>Customer Service & <br/> Events Coordinator</p>
-
-                            </div>
-
-                            <div className={styles.teamCol}>
-                                
-                                <div className={styles.teamImage} style={{
-                                    background: `url(${ET})`,
-                                    backgroundSize: "cover"
-                                }}></div>
-
-                                <p className={styles.name}>Elias T.</p>
-                                <p className={styles.title}>Web Designer/Developer & <br/> IT Specialist</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div className={styles.surplusSection}>
-
-                <div className={styles.container}>
-
-                    <div className={styles.heroText}>
-
-                        <img src={surplusAsset} />
-
-                    </div>
-
-                    <div className={styles.details}>
-
-                        <p>You may be entitled to surplus funds.</p>
-
-                        <p>Have you lost your home in a foreclosure? Any excess funds acquired from <br/>
-                        a tax or mortgage foreclosure sale on your home are legally entitled to you. <br/> <br/>
-                        
-                        Depending on the laws of the state, the previous property owner has anywhere from <br/>
-                        a few months to a few years to claim surplus funds.</p>
-
-                        <div className={styles.contactButton}>
-                            <p>LEARN MORE</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className={styles.contactSection}>
-
-                <div className={styles.contactMap}>
-
-                    <div className={styles.map}>
-
-                    </div>
-
-                    <div className={styles.footer}>
-
-                        <p>Superior Advantage Realtors Inc. © 2023</p>
-
-                        <p>478-862-9533</p>
-
-                    </div>
-                </div>
-
-                <div className={styles.contactForm}>
-
-                    <div className={styles.container}>
-
-                        <p className={styles.contactHeader}>CONTACT US</p>
-
-                        <p className={styles.contactInfo}>Contact us any time you need professional support or have any questions. </p>
-
-                        <form>
-
-                            <div style={{ display: "flex", width: "100%"}}>
-
-                                <div className={styles.formInput} style={{ width: "50%"}}>
-                                    <label>Name</label>
-                                    <input placeholder='Name' type='text' />
-                                </div>
-
-                                <div className={styles.formInput} style={{ width: "50%"}}>
-                                    <label>Email</label>
-                                    <input placeholder='Email' type='text' />
-                                </div>
-
-                            </div>
-
-                            <div className={styles.formInput}>
-                                <label>Message</label>
-                                <textarea placeholder='Type something here...' rows={10}></textarea>
-
-                                <button className={styles.contactSubmit} type="submit">SEND</button>
-                            </div>
-
-
-
-                        </form>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
+  const scrollDown = () => {
+    var i = 10;
+    var int = setInterval(function () {
+      window.scrollBy(0, i);
+      i += 10;
+      if (i >= 200) clearInterval(int);
+    }, 20);
+  };
+
+  return (
+    <div className={styles.homeContainer}>
+      <div className={styles.heroContainer}>
+        <div className={styles.heroTitleContainer}>
+          <div className={styles.heroTitleCard}>
+            <p className={styles.heroTitle}>
+              "You may be <span className={styles.heroUnderline}>ENTITLED</span> to
+              surplus funds. <br />
+            </p>
+            <div className={styles.heroAccentBar}></div>
+            <p className={styles.heroSubTitle}>
+              Don't leave money on the table! Contact Superior Advantage Real Estate Recovery, to recover your surplus funds.
+            </p>
+          </div>
+          <div style={{ flexGrow: 1 }} />
         </div>
-    );
+        <div className={styles.heroImage}></div>
+      </div>
+
+      <div className={styles.aboutContainer}>
+        <h1>SURPLUS FUNDS ASSISTANCE</h1>
+      </div>
+
+      <div className={styles.pageContent}>
+        <p>
+          "<b>Surplus funds, also known as excess funds, overages, or excess proceeds,</b> are left over funds that may be claimed by a homeowner when a foreclosed property is sold at auction for more than what was owed in mortgage payments or property taxes. 
+          <br/><br/>
+          At times, some homeowners are not able to keep up with mortgage payments or pay the back taxes owed on their property. 
+
+          When this happens, homeowners can lose their homes in what is called a tax sale, sheriff's sale, or a mortgage foreclosure sale, which is a public auction where foreclosed properties are sold to the highest bidder in order to pay off the debt.  
+          <br/><br/>
+          <b>Sometimes a foreclosure sale generates more money than required to pay off the debt, resulting in excess funds.</b>
+          <br/><br/>
+          Any excess funds from a tax or mortgage foreclosure sale are subject to <b>priority claims</b>. This means that those persons/parties with a superior right may recover the funds. 
+
+          Excess funds may be claimed by the person who owned the property at the time of the foreclosure sale, the owner of each security deed that affects the property, or any other party that has a lien or recorded equity interest in the property at the time of the sale.
+          <br/><br/>
+          The lender or the county cannot legally keep any money exceeding what was owed to them unless the overage funds remain unclaimed for a certain amount of time.
+
+          Depending on the laws of the state, the previous property owner has anywhere from a few months to a few years to claim surplus funds. However, if the money remains unclaimed for too long, the funds become the property of the county or the lender.
+
+          In Georgia, claimants have up to 5 years after a tax sale to claim overages before the funds are paid to the state."
+          <br/><br/>
+          <b>- E. Albert Law</b>
+          <br/><br/>
+          Contact Superior Advantage Real Estate Recovery, we help former property owners recover surplus funds.
+        </p>
+
+        <br/>
+
+        <h2 style={{ fontSize: "20px"}}><b>To claim any surplus funds you might have, contact us below!</b></h2>
+      </div>
+
+      <div className={styles.contactSection}>
+        <div className={styles.contactMap}>
+          <div className={styles.map}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.7128033741053!2d-84.23850503035216!3d32.556815928721086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3a04f5d3f8dcb%3A0x943de4792342616e!2s2%20W%20Main%20St%2C%20Butler%2C%20GA%2031006!5e0!3m2!1sen!2sus!4v1690772593645!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div className={styles.footer}>
+            <p>Superior Advantage Realtors Inc. © 2023</p>
+
+            <p>478-862-9533</p>
+          </div>
+        </div>
+
+        <div className={styles.contactForm}>
+          <div className={styles.container}>
+            <p className={styles.contactHeader}>CONTACT US</p>
+
+            <p className={styles.contactInfo}>
+              Contact us any time you need professional support or have any
+              questions.{" "}
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="f77eccf9-04cf-457e-bc51-3b4d7f7601eb"
+              />
+
+              <div style={{ display: "flex", width: "100%" }}>
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>Name</label>
+                  <input placeholder="Name" type="text" required />
+                </div>
+
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>Email</label>
+                  <input placeholder="Email" type="text" required />
+                </div>
+              </div>
+
+              <div className={styles.formInput}>
+                <label>Message</label>
+                <textarea
+                  placeholder="Type something here..."
+                  rows={10}
+                  required
+                ></textarea>
+
+                <button className={styles.contactSubmit} type="submit">
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Surplus;

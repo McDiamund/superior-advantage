@@ -1,0 +1,362 @@
+.homeContainer {
+    width: 100%;
+}
+
+/* Hero Section */
+
+.heroContainer {
+    width: 100%;
+    height: 55vh;
+
+    display: flex;
+}
+
+.heroImage {
+    width: 60%;
+
+    background: url('../../assets/foresale.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heroTitleContainer {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroTitleCard {
+    width: 100%;
+    height: 200px;
+
+    box-sizing: border-box;
+
+    padding-right: 80px;
+    padding-left: 20px;
+    margin-top: 15%;
+}
+
+.heroTitle {
+    font-size: 2.5vw;
+    text-align: right;
+    font-family: 'Georgia';
+}
+
+.heroSubTitle {
+    float: right;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    font-family: Jost;
+    font-size: 25px;
+    text-align: right;
+}
+
+.heroUnderline {
+    text-decoration: underline;
+    text-decoration-color: #e62528;
+}
+
+.heroAccentBar {
+    width: 220px;
+    height: 15px;
+
+    float: right;
+
+    background-color: black;
+
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.heroButtons {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+.heroButtonPrimary {
+    width: 200px;
+    height: 60px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e62528;
+    color: white;
+
+    font-family: 'Jost';
+    font-size: 17px;
+}
+
+.heroButtonPrimary:hover {
+    background-color: #f8393c;
+}
+
+.heroButtonSecondary {
+    width: 200px;
+    height: 60px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border: solid black 4px;
+
+    font-family: 'Jost';
+    font-size: 17px;
+}
+
+.heroButtonSecondary:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Hero Actions */
+
+.actions {
+    width: 100%;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.downArrow {
+    margin-left: 15px;
+
+    cursor: pointer;
+    
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.downArrow img {
+    height: 60px;
+}
+
+.badges {
+    display: flex;
+    align-items: end;
+}
+
+.badge {
+    margin-right: 20px;
+    
+}
+
+/* About */
+
+.aboutContainer {
+    width: 100%;
+    height: 20vh;
+
+    background-image: url('../../assets/map-background.png');
+
+    background-color: #0f499d;
+    color: white;
+
+    font-family: Jost;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutContainer H1 {
+    font-size: 40px;
+}
+
+.aboutContent {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.aboutContent p {
+    font-family: 'Jost';
+    color: white;
+
+    font-size: 25px;
+}
+
+/* Content */
+
+.pageContent p {
+    width: 70%;
+}
+
+.pageContent {
+    font-family: Jost;
+    padding: 15px 20px 40px 20px;
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentContainer {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.cell {
+    padding: 10px;
+    font-family: Jost;
+    background-color: rgb(239, 239, 239);
+    margin: 2px;
+}
+
+.cellNumber {
+    font-size: 25px;
+}
+
+.cellHeader {
+    font-size: 20px;
+}
+
+
+
+
+/* Contact Section */
+
+.contactSection {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+}
+
+.contactSection .contactMap {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .contactMap .map {
+    flex-grow: 1;
+    background-color: bisque;
+}
+
+.contactSection .contactMap .footer {
+    height: 50px;
+
+    padding: 0% 2% 0% 2%;
+
+    background-color: #323232;
+
+    font-family: Jost;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contactSection .contactForm {
+    width: 55%;
+    background-color: #0f499d;
+
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSection .contactForm .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactSection .contactForm .container form {
+    width: 600px;
+}
+
+.contactSection .contactForm .container  label {
+    font-family: Jost;
+    color:  white;
+    padding: 10px 0px 5px 0px;
+}
+
+.contactHeader {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 60px;
+}
+
+.contactInfo {
+    text-align: center;
+    color: white;
+    font-family: Jost;
+    font-size: 20px;
+}
+
+.formInput {
+    padding: 0px 5px 0px 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput input {
+    padding: 5px;
+}
+
+.formInput textarea {
+    padding: 5px;
+}
+
+.contactSubmit {
+    width: 100%;
+    height: 20px;
+
+    font-size: 20px;
+    font-family: Jost;
+    background-color: #e62528;
+    color: white;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

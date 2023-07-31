@@ -28,10 +28,13 @@ function Header() {
 
         <div className={styles.navbar}>
           <ul className={styles.menu}>
-            <li><p>HOME</p></li>
-            <li><p>RESOURCES</p></li>
-            <li><p>SURPLUS FUNDS ASSISTANCE</p></li>
-            <li><p>CONTACT US</p></li>
+            <li><Link to="/"><p>HOME</p></Link></li>
+            <li><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
+            <li><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
+            <li><Link to="/qwr"><p>QWR</p></Link></li>
+            <li><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
+            <li style={{ flexGrow: "1"}}></li>
+            <li><p>478-862-9533</p></li>
           </ul>
 
           <div className={styles.mobileNavbar}>
@@ -40,9 +43,11 @@ function Header() {
             </div>
 
             <ul style={{ display: isMenuOpen ? 'flex' : 'none'}} className={styles.mobileMenu}>
-              <li><p>HOME</p></li>
-              <li><p>RESOURCES</p></li>
-              <li><p>SURPLUS FUNDS ASSISTANCE</p></li>
+              <li><a href="/"><p>HOME</p></a></li>
+              <li><p>BUYING A HOME</p></li>
+              <li><p>SELLING A HOME</p></li>
+              <li><a><p>QWR</p></a></li>
+              <li><a href="/surplus"><p>SURPLUS FUNDS</p></a></li>
               <li><p>CONTACT US</p></li>
             </ul>
 

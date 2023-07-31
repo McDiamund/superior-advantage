@@ -6,7 +6,7 @@
 
 .heroContainer {
     width: 100%;
-    height: 100vh;
+    height: 55vh;
 
     display: flex;
 }
@@ -14,9 +14,9 @@
 .heroImage {
     width: 60%;
 
-    background: url('../../assets/heroimage.jpg');
+    background: url('../../assets/money.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
 }
 
@@ -31,16 +31,17 @@
 
 .heroTitleCard {
     width: 100%;
-    height: 500px;
+    height: 200px;
 
     box-sizing: border-box;
 
     padding-right: 80px;
-    margin-top: 25%;
+    padding-left: 20px;
+    margin-top: 15%;
 }
 
 .heroTitle {
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: right;
     font-family: 'Georgia';
 }
@@ -52,7 +53,7 @@
     margin-bottom: 20px;
 
     font-family: Jost;
-    font-size: 20px;
+    font-size: 25px;
     text-align: right;
 }
 
@@ -177,11 +178,22 @@
 
 .aboutContainer {
     width: 100%;
-    height: 25vh;
+    height: 20vh;
 
     background-image: url('../../assets/map-background.png');
 
     background-color: #0f499d;
+    color: white;
+
+    font-family: Jost;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutContainer H1 {
+    font-size: 40px;
 }
 
 .aboutContent {
@@ -196,234 +208,15 @@
     font-size: 25px;
 }
 
-/* Testimonials */
+/* Content */
 
-.testimonialsContainer {
-    height: 70vh;
-
-    background-color: #f4f4f4;
-
-    display: flex;
-}
-
-.testimonialsGrid {
-    width: 50%;
-
-    box-sizing: border-box;
-
-    background-color: black;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.testimonialOne {
-
-    box-sizing: border-box;
-
-    grid-column: 3 / 5;
-    grid-row: 1 / 3;
-
-    background: url('../../assets/KW.jpg');
-    background-size:  cover;
-    background-position: center;
-
-    display: flex;
-    align-items: flex-end;
-
-    box-shadow: 0px 4px 4px 0px #00000040, inset 0 0 0 1000px rgba(0,0,0,.4);
-    
-}
-
-.testimonialOne p {
-
-    padding-left: 10px;
-
+.pageContent {
     font-family: Jost;
-    font-size: 40px;
-    color: white;
+    padding: 15px 20px 40px 20px;
+
+    height: fit-content;
 }
 
-.testimonialTwo {
-
-    background: url('../../assets/Steven.jpg');
-    background-size:  cover;
-    background-position: center;
-
-    box-shadow: 0px 4px 4px 0px #00000040, inset 0 0 0 1000px rgba(0,0,0,.4);
-
-    box-sizing: border-box;
-
-    display: flex;
-    align-items: flex-end;
-
-    grid-column: 1 / 3;
-}
-
-.testimonialTwo p {
-
-    padding-left: 10px;
-
-    font-family: Jost;
-    font-size: 40px;
-    color: white;
-}
-
-.testimonialThree {
-
-    background: url('../../assets/Thomas.jpg');
-    background-size: cover;
-
-    box-shadow: 0px 4px 4px 0px #00000040, inset 0 0 0 1000px rgba(0,0,0,.4);
-
-    display: flex;
-    align-items: flex-end;
-
-    grid-column: 1 / 3;
-}
-
-.testimonialThree p {
-
-    padding-left: 10px;
-
-    font-family: Jost;
-    font-size: 40px;
-    color: white;
-}
-
-.testimonialContent {
-    
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.testimonialContent .content {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.tcHeader {
-    padding-top: 50px;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 70px;
-}
-
-.tcSubHeading {
-    font-family: Jost;
-    font-size: 25px;
-}
-
-.tcAccentImage {
-
-    width: 50%;
-    height: 50%;
-
-    margin-top: 30px;
-
-    background: url('../../assets/QuotationMark.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.tooltip {
-    font-family: Jost;
-    font-size: 20px;
-
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-/* Our Team */
-
-.teamSection {
-    width: 100%;
-}
-
-.teamSection .container {
-    display: flex;
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.teamSection .row {
-    width: fit-content;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-}
-
-.teamHeader {
-    margin-bottom: 50px;
-
-    font-family: Georgia;
-    font-size: 50px;
-}
-
-.teamAccentBar {
-    width: 220px;
-    height: 15px;
-
-    background-color: black;
-
-    margin-top: 10px;
-}
-
-.teamCol .teamImage {
-    width: 250px;
-    height: 250px;
-    background-color: black;
-}
-
-.teamCol .name {
-
-    margin-top: 10px;
-
-    font-family: Jost;
-    font-size: 25px;
-}
-
-.teamCol .title {
-    font-family: Jost;
-}
-
-/* Surplus Section */
-
-.surplusSection {
-    width: 100%;
-
-    background: url(../../assets/surplusBackground.png);
-    background-size: cover;
-}
-
-.surplusSection .container {
-
-    padding: 2% 10% 1% 1%;
-
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.surplusSection .container .details {
-    color: white;
-
-    font-family: Jost;
-    font-size: 20px;
-}
 
 /* Contact Section */
 
@@ -480,7 +273,7 @@
 }
 
 .contactSection .contactForm .container form {
-    width: 500px;
+    width: 600px;
 }
 
 .contactSection .contactForm .container  label {

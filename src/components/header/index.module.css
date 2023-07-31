@@ -136,6 +136,15 @@
     width: 40px;
 }
 
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources .rTitle {
+    margin-bottom: 20px;
+}
+
 /* Responsive Design */
 
 @media only screen and (max-width: 1245px) {
