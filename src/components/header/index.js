@@ -45,11 +45,11 @@ function Header() {
             </div>
 
             <ul style={{ display: isMenuOpen ? 'flex' : 'none'}} className={styles.mobileMenu}>
-              <li><Link to="/"><p>HOME</p></Link></li>
-              <li><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
-              <li><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
-              <li><Link to="/qwr"><p>QWR</p></Link></li>
-              <li><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/"><p>HOME</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/qwr"><p>QWR</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
             </ul>
 
           </div>
