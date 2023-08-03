@@ -127,6 +127,183 @@
     color: white;
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .heroTitle {
+        font-size: 3.2vw;
+    }
+
+    .heroButtons .heroButtonPrimary {
+        width: 190px;
+        height: 50px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 190px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .heroTitleCard {
+        padding-right: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .heroTitle {
+        font-size: 5vw;
+    }
+
+    .heroTitleCard {
+        margin-top: 17%;
+    }
+
+    .heroTitleContainer {
+        width: 60%;
+    }
+
+    .heroImage {
+        width: 40%;
+    }
+
+    .heroButtons .heroButtonPrimary {
+        width: 200px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 200px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+
+    .heroTitleContainer {
+        width: 70%;
+    }
+
+    .heroImage {
+        width: 30%;
+    }
+
+    .heroTitleCard {
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+
+    .heroContainer {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .heroTitleContainer {
+        width: 100%;
+        height: 200px;
+    }
+
+    .heroImage {
+        height: 200px;
+        width: 100%;
+    }
+
+    .heroTitleCard {
+        margin-top: 5%;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .heroAccentBar {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .heroTitle {
+        font-size: 30px;
+    }
+
+    .heroSubTitle {
+        font-size: 20px;
+    }
+
+    .heroTitleCard {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    
+    .heroTitleContainer {
+        height: fit-content;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .heroButtons .heroButtonPrimary {
+        width: 160px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 160px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .heroTitleCard {
+        padding-right: 9%;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .heroButtons .heroButtonPrimary {
+        width: 120px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonPrimary p {
+        font-size: 15px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 120px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary p {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+}
+
 /* Hero Actions */
 
 .actions {
@@ -210,12 +387,83 @@
 
 /* Content */
 
+.pageContent p {
+    width: 70%;
+}
+
 .pageContent {
     font-family: Jost;
-    padding: 15px 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
 
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.contentContainer {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: 1fr 1fr;
+}
+
+.cell {
+    padding: 20px;
+    font-family: Jost;
+    background-color: rgb(239, 239, 239);
+    margin: 2px;
+}
+
+.cellNumber {
+    font-size: 25px;
+}
+
+.cellHeader {
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .contentContainer {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));;
+    }
+
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .aboutContainer h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .aboutContainer h1 {
+        font-size: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .aboutContainer h1 {
+        font-size: 20px;
+    }
+
+    .contentContainer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    }
+
+
+}
+
+
 
 
 /* Contact Section */
@@ -326,4 +574,72 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .contactHeader {
+        font-size: 40px;
+    }
+
+    .contactInfo {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .contactSection .contactForm .container form {
+        width: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    .contactSection {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .contactSection .contactForm  {
+        width: 100%;
+    }
+
+    .contactSection .contactForm .container form {
+        width: 500px;
+    }
+
+    .contactSection .contactMap {
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .contactSection .contactForm .container form {
+        width: 400px;
+    }
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    .contactSection .contactForm .container form {
+        width: 300px;
+        padding-bottom: 10px;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+
+    .formRow .formInput {
+        width: 100% !important;
+    }
+
 }

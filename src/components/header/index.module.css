@@ -147,28 +147,27 @@
 
 /* Responsive Design */
 
-@media only screen and (max-width: 1245px) {
+@media only screen and (max-width: 1687px) {
 
     .navbar p {
         font-size: 15px;
     }
 
-}
-
-@media only screen and (max-width: 1110px) {
-
-    .navbar {
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 1029px) {
-    .mobileMenu {
+    .flexBar {
         display: none !important;
     }
+
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1451px) {
+
+    .navbar p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
 
     .navbar {
         width: 60px;

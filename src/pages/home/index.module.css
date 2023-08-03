@@ -115,6 +115,162 @@
     color: white;
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .heroContainer {
+        height: 90vh;
+    }
+
+    .heroTitle {
+        font-size: 3.2vw;
+    }
+
+    .heroButtons .heroButtonPrimary {
+        width: 190px;
+        height: 50px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 190px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .heroTitleCard {
+        padding-right: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .heroTitle {
+        font-size: 5vw;
+    }
+
+    .heroTitleCard {
+        margin-top: 17%;
+    }
+
+    .heroTitleContainer {
+        width: 60%;
+    }
+
+    .heroImage {
+        width: 40%;
+    }
+
+    .heroButtons .heroButtonPrimary {
+        width: 200px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 200px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+
+    .heroTitleContainer {
+        width: 70%;
+    }
+
+    .heroImage {
+        width: 30%;
+    }
+
+    .heroTitleCard {
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+
+    .heroContainer {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .heroTitleContainer {
+        width: 100%;
+        height: 500px;
+    }
+
+    .heroImage {
+        height: 200px;
+        width: 100%;
+    }
+
+    .heroTitleCard {
+        margin-top: 5%;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .heroButtons .heroButtonPrimary {
+        width: 160px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 160px;
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .heroTitleCard {
+        padding-right: 9%;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .heroButtons .heroButtonPrimary {
+        width: 120px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonPrimary p {
+        font-size: 15px;
+    }
+
+    .heroButtons .heroButtonSecondary {
+        width: 120px;
+        height: 60px;
+    }
+
+    .heroButtons .heroButtonSecondary p {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+}
+
 /* Hero Actions */
 
 .actions {
@@ -166,7 +322,7 @@
 
 .aboutContainer {
     width: 100%;
-    height: 35vh;
+    height: fit-content;
 
     background-image: url('../../assets/map-background.png');
 
@@ -175,10 +331,11 @@
 
 .textBackground {
     width: 100%;
-    height: 35vh;
+
+    padding-bottom: 40px;
 
     background-image: url('../../assets/text-about-background.png');
-    background-position: right;
+    background-position: top;
     background-size: cover;
 }
 
@@ -211,8 +368,8 @@
 
     cursor: pointer;
 
-    position: absolute;
-    z-index: 5;
+    /* position: absolute;
+    z-index: 5; */
 
     display: flex;
     justify-content: center;
@@ -235,6 +392,30 @@
 
 .contactButton p {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 1810px) {
+
+    .aboutInfo {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 1330px) {
+
+    .aboutContent p {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .aboutContent p {
+        font-size: 16px;
+    }
+
 }
 
 /* Testimonials */
@@ -495,6 +676,7 @@
     background: url('../../assets/QuotationMark.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 .tooltip {
@@ -503,6 +685,131 @@
 
     margin-left: 20px;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1650px) {
+
+    .tcHeader {
+        font-size: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1430px) {
+
+    .tcHeader {
+        font-size: 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 1190px) {
+
+    .tcHeader {
+        font-size: 40px;
+    }
+
+    .tcSubHeading {
+        font-size: 20px;
+    }
+
+    .testimonialsContainer {
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    .testimonialContent {
+        width: 100%;
+        height: 40%;
+    }
+
+    .testimonialsGrid {
+        width: 100%;
+        height: 60%;
+    }
+
+    .tcHeader {
+        font-size: 60px;
+    }
+
+    .tcAccentImage {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .tcHeader {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 624px) {
+
+    .testimonialOneContent {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 624px) {
+
+    .tcHeader {
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .testimonialsGrid {
+        height: 800px;
+    }
+
+    .testimonialOne {
+        grid-column: 1 / 5;
+    }
+
+    .testimonialTwo {
+        grid-column: 1 / 5;
+    }
+
+    .testimonialThree {
+        grid-column: 1 / 5;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .tcHeader {
+        font-size: 35px;
+    }
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    .tcHeader {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .tcHeader {
+        font-size: 30px;
+    }
+
+    .tcSubHeading {
+        font-size: 18px;
+    }
+
 }
 
 /* Our Team */
@@ -515,7 +822,7 @@
     display: flex;
 
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 
     justify-content: center;
     align-items: center;
@@ -523,6 +830,8 @@
 
 .teamSection .row {
     width: fit-content;
+
+    justify-content: space-evenly;
 
     display: flex;
     flex-wrap: wrap;
@@ -563,6 +872,51 @@
     font-family: Jost;
 }
 
+@media only screen and (max-width: 1700px) {
+
+    .teamCol .teamImage {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 1450px) {
+
+    .teamSection .container .content {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .teamHeader {
+        font-size: 40px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 418px) {
+
+    .teamHeader {
+        font-size: 40px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 /* Surplus Section */
 
 .surplusSection {
@@ -586,6 +940,81 @@
 
     font-family: Jost;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 1700px) {
+
+    .surplusSection .container .details {
+        color: white;
+    
+        font-family: Jost;
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .heroText {
+        width: 40%;
+    }
+
+    .surplusSection .container .details {
+        color: white;
+    
+        font-family: Jost;
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .surplusSection .container .details {
+        color: white;
+    
+        font-family: Jost;
+        font-size: 15px;
+    }
+
+    .surplusSection .contactButton {
+        width: 190px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .surplusSection {
+        height: 64vh;
+    }
+
+    .surplusSection .container {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        padding-right: 2%;
+    }
+
+    .surplusSection .container .details {
+        text-align: right;
+    }
+    
+    .surplusSection .contactButton {
+        float: right;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .surplusSection {
+        height: 56vh;
+    }
+
+
+
 }
 
 /* Contact Section */
@@ -634,6 +1063,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.formRow {
+    width: 100%;
+    display: flex;
 }
 
 .contactSection .contactForm .container {
@@ -696,4 +1130,72 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .contactHeader {
+        font-size: 40px;
+    }
+
+    .contactInfo {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .contactSection .contactForm .container form {
+        width: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    .contactSection {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .contactSection .contactForm  {
+        width: 100%;
+    }
+
+    .contactSection .contactForm .container form {
+        width: 500px;
+    }
+
+    .contactSection .contactMap {
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .contactSection .contactForm .container form {
+        width: 400px;
+    }
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    .contactSection .contactForm .container form {
+        width: 300px;
+        padding-bottom: 10px;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+
+    .formRow .formInput {
+        width: 100% !important;
+    }
+
 }

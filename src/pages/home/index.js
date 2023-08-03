@@ -136,14 +136,14 @@ function Home() {
             <div className={styles.tcAccentImage}></div>
           </div>
           <div className={styles.tooltip}>
-            <p>HOVER TO SEE</p>
+            <p>CLICK TO SEE</p>
           </div>
         </div>
       </div>
 
       <div className={styles.teamSection}>
         <div className={styles.container}>
-          <div>
+          <div className={styles.content}>
             <div className={styles.teamHeader}>
               <p>Meet the Team</p>
               <div className={styles.teamAccentBar}></div>
@@ -288,7 +288,7 @@ function Home() {
 
                 <input type="hidden" name="access_key" value="f77eccf9-04cf-457e-bc51-3b4d7f7601eb" />
 
-              <div style={{ display: "flex", width: "100%" }}>
+              <div className={styles.formRow}>
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Name</label>
                   <input placeholder="Name" type="text" required/>

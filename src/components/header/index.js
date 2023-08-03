@@ -18,11 +18,13 @@ function Header() {
 
         {/* Logo */}
 
-        <div className={styles.logoContainer}>
-          <div className={styles.logo}>
-            <img src={logo} />
+        <Link to="/">
+          <div className={styles.logoContainer}>
+            <div className={styles.logo}>
+              <img src={logo} />
+            </div>
           </div>
-        </div>
+        </Link>
 
         {/* Navigation Bar */}
 
@@ -33,7 +35,7 @@ function Header() {
             <li><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
             <li><Link to="/qwr"><p>QWR</p></Link></li>
             <li><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
-            <li style={{ flexGrow: "1"}}></li>
+            <li className={styles.flexBar} style={{ flexGrow: "1"}}></li>
             <li><p>478-862-9533</p></li>
           </ul>
 
@@ -43,12 +45,11 @@ function Header() {
             </div>
 
             <ul style={{ display: isMenuOpen ? 'flex' : 'none'}} className={styles.mobileMenu}>
-              <li><a href="/"><p>HOME</p></a></li>
-              <li><p>BUYING A HOME</p></li>
-              <li><p>SELLING A HOME</p></li>
-              <li><a><p>QWR</p></a></li>
-              <li><a href="/surplus"><p>SURPLUS FUNDS</p></a></li>
-              <li><p>CONTACT US</p></li>
+              <li><Link to="/"><p>HOME</p></Link></li>
+              <li><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
+              <li><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
+              <li><Link to="/qwr"><p>QWR</p></Link></li>
+              <li><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
             </ul>
 
           </div>
