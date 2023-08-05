@@ -1,5 +1,6 @@
 import styles from "./index.module.css";
 import downArrow from "assets/down-arrow.svg";
+import multiMillionDollar from "assets/mmdl.png"
 import realtorLogo from "assets/realtor-logo.png";
 import equalHousing from "assets/equal-housing.webp";
 import surplusAsset from "assets/surplus.png";
@@ -50,6 +51,10 @@ function Home() {
 
             <div className={styles.badges}>
               <div className={styles.badge}>
+                <img src={multiMillionDollar} width={65} />
+              </div>
+
+              <div className={styles.badge}>
                 <img src={realtorLogo} width={50} />
               </div>
 
@@ -74,7 +79,7 @@ function Home() {
 
             <div className={styles.aboutInfo}>
               <p>SOUTH GEORGIA | 478-862-9533</p>
-              <p>EMAIL | officemanager@superioradvantage-re.com</p>
+              <p>EMAIL | jrussproperties@gmail.com</p>
               <p>ATLANTA REGION | 404-421-4560</p>
             </div>
 
