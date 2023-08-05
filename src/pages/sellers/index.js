@@ -1,23 +1,6 @@
 import styles from "./index.module.css";
-import downArrow from "assets/down-arrow.svg";
-import realtorLogo from "assets/realtor-logo.png";
-import equalHousing from "assets/equal-housing.webp";
-import surplusAsset from "assets/surplus.png";
-import JR from "assets/JR.png";
-import RT from "assets/RT.jpg";
-import DG from "assets/DG.jpg";
-import AE from "assets/AE.jpg";
-import ET from "assets/1649097022047.jfif";
 
 function Sellers() {
-  const scrollDown = () => {
-    var i = 10;
-    var int = setInterval(function () {
-      window.scrollBy(0, i);
-      i += 10;
-      if (i >= 200) clearInterval(int);
-    }, 20);
-  };
 
   return (
     <div className={styles.homeContainer}>
@@ -120,100 +103,7 @@ function Sellers() {
         
         </p>
 
-
-
       </div>
-      {/* 
-      <div className={styles.pageContent}>
-        <p style={{ textAlign: "center" }}>
-          <br />
-          <b style={{ fontSize: "20px" }}>Welcome Homebuyer</b> <br /> <br />
-          At Superior Advantage Realtors, we love what we do! We're dedicated to
-          helping you successfully navigate the home buying process. Today's
-          housing market is constantly changing, and offers many new challenges
-          and obstacles that can easily discourage hopeful home buyers. Our
-          Agents & Representatives are skilled, knowledgeable, accessible and
-          qualified to give you Superior Service. Let's get started!!
-          <br />
-          <br />
-          <b style={{ fontSize: "20px" }}>First Step</b> <br /> <br />
-          Let’s Get You Pre-Qualified. We’ll need you to call the Bank of
-          America Call Center. The loan officer will review your credit status,
-          with you, and let you know if you are currently a strong candidate for
-          a home purchase, or a buyer who may need a little more assistance with
-          credit history building or repair. The number is{" "}
-          <b>1-800-900-9000.</b> Make sure to ask the loan officer for your 3
-          credit scores, before hanging up. You may also consult your local
-          lender. Then call us immediately with the information she/he gives you
-          <br />
-          <br />
-          <b style={{ fontSize: "20px" }}>Second Step</b> <br /> <br />
-          Congratulations, you’re pre-qualified, and ready to start house
-          hunting! Or maybe not. If the loan officer is unable to give you a
-          prequalification, and in fact, says there are a few credit issues you
-          may need to resolve, no worries. Be ready to call this number. One
-          call will get you all 3 copies of your credit report. The agencies are
-          Equifax, Experian and Transunion. Remain on the line until you’ve
-          successfully followed the prompts to receive all three reports. The
-          number is <b>1-877-322-8228</b>. It’s available for use anytime, 7 days a
-          week. Your reports arrive in 5-10 working days, once you receive them,
-          give us a call.
-          <br />
-          <br />
-          <b style={{ fontSize: "20px" }}>Third Step</b> <br /> <br />
-          You’re Ready to Sit Down With Us… You’ve received your credit reports
-          and you have a definite direction that just needs some fine tuning.
-          Our well trained Resource Facilitator is ready to help you get where
-          you need to go! The Facilitator will review your reports, offer
-          suggestions on how you can build credit and help you implement dispute
-          tactics that may remove credit entries that have been wrongfully
-          placed on your report and are hindering your progress. The
-          Facilitator’s goal is to help you improve your credit score so that
-          you will be able to make your purchase.
-          <br />
-          <br />
-          <b style={{ fontSize: "20px" }}>Fourth Step</b> <br /> <br />
-          You Are Finally A Qualified Buyer. You’ve worked with our Resource
-          Facilitator and are now a credit worthy buyer. It’s time to go House
-          Hunting! The Facilitator will help you select the right lender. We use
-          authorized lenders who have demonstrated a particular expertise in the
-          areas of Down Payment assistance, USDA (100%) loans, as well as State
-          and County funds that may be available to our borrowers. Next, we’ll
-          refer you to one of our knowledgeable Real Estate Agents who will be
-          happy to assist you with your home purchase. Our Realtors(R) are
-          licensed in the State Of Georgia and are certified in the areas of
-          Short Sales, Foreclosures, Residential Sales and New Home
-          Construction. Their goal is to find you the best deal, while providing
-          you with Outstanding Representation throughout your home buying
-          process.
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <b style={{ fontSize: "20px" }}>
-            DOWN PAYMENT ASSISTANCE IS BACK, ALIVE & WELL
-          </b>{" "}
-          <br /> <br />
-          There is so much misinformation about the existence and availability
-          of down payment assistance. The truth is, if you’re making a home
-          purchase, you may qualify for down payment assistance. There are
-          Federal, State and Local sources that are designed specifically to
-          assist you with your down payment needs. If you are one of those
-          buyers who believes that down payment assistance (DPA) is a resource
-          that is only available to buyers with low incomes, think again! Many
-          of the federal programs have NO maximum income limits. Other
-          Non-Federal programs also have NO maximum income limits, and it does
-          not matter where your dream home is located, within the state. One
-          widely used assistance program allows income limits of up to $81,000
-          per year. Please speak with your Realtor and Lender about down payment
-          assistance. Receiving DPA really could help you make a desired home
-          purchase a reality and allow you to hold on to your reserves that may
-          come in handy after you have purchased your new home.
-        </p>
-
-        <br />
-      </div> */}
 
       <div className={styles.contactSection}>
         <div className={styles.contactMap}>
@@ -254,12 +144,12 @@ function Sellers() {
               <div style={{ display: "flex", width: "100%" }}>
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Name</label>
-                  <input placeholder="Name" type="text" required />
+                  <input name="name" placeholder="Name" type="text" required />
                 </div>
 
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
-                  <input placeholder="Email" type="text" required />
+                  <input type="email" name="email" placeholder="Email" required />
                 </div>
               </div>
 
@@ -267,6 +157,7 @@ function Sellers() {
                 <label>Message</label>
                 <textarea
                   placeholder="Type something here..."
+                  name="message"
                   rows={10}
                   required
                 ></textarea>

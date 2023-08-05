@@ -290,18 +290,21 @@ function Home() {
             </p>
 
             <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="f77eccf9-04cf-457e-bc51-3b4d7f7601eb"
+              />
 
-                <input type="hidden" name="access_key" value="f77eccf9-04cf-457e-bc51-3b4d7f7601eb" />
-
-              <div className={styles.formRow}>
+              <div style={{ display: "flex", width: "100%" }}>
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Name</label>
-                  <input placeholder="Name" type="text" required/>
+                  <input name="name" placeholder="Name" type="text" required />
                 </div>
 
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
-                  <input placeholder="Email" type="text" required/>
+                  <input type="email" name="email" placeholder="Email" required />
                 </div>
               </div>
 
@@ -309,6 +312,7 @@ function Home() {
                 <label>Message</label>
                 <textarea
                   placeholder="Type something here..."
+                  name="message"
                   rows={10}
                   required
                 ></textarea>

@@ -111,12 +111,12 @@ function Surplus() {
               <div style={{ display: "flex", width: "100%" }}>
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Name</label>
-                  <input placeholder="Name" type="text" required />
+                  <input name="name" placeholder="Name" type="text" required />
                 </div>
 
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
-                  <input placeholder="Email" type="text" required />
+                  <input type="email" name="email" placeholder="Email" required />
                 </div>
               </div>
 
@@ -124,6 +124,7 @@ function Surplus() {
                 <label>Message</label>
                 <textarea
                   placeholder="Type something here..."
+                  name="message"
                   rows={10}
                   required
                 ></textarea>

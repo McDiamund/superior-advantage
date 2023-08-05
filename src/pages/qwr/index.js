@@ -1,23 +1,6 @@
 import styles from "./index.module.css";
-import downArrow from "assets/down-arrow.svg";
-import realtorLogo from "assets/realtor-logo.png";
-import equalHousing from "assets/equal-housing.webp";
-import surplusAsset from "assets/surplus.png";
-import JR from "assets/JR.png";
-import RT from "assets/RT.jpg";
-import DG from "assets/DG.jpg";
-import AE from "assets/AE.jpg";
-import ET from "assets/1649097022047.jfif";
 
 function QWR() {
-  const scrollDown = () => {
-    var i = 10;
-    var int = setInterval(function () {
-      window.scrollBy(0, i);
-      i += 10;
-      if (i >= 200) clearInterval(int);
-    }, 20);
-  };
 
   return (
     <div className={styles.homeContainer}>
@@ -109,12 +92,12 @@ function QWR() {
               <div style={{ display: "flex", width: "100%" }}>
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Name</label>
-                  <input placeholder="Name" type="text" required />
+                  <input name="name" placeholder="Name" type="text" required />
                 </div>
 
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
-                  <input placeholder="Email" type="text" required />
+                  <input type="email" name="email" placeholder="Email" required />
                 </div>
               </div>
 
@@ -122,6 +105,7 @@ function QWR() {
                 <label>Message</label>
                 <textarea
                   placeholder="Type something here..."
+                  name="message"
                   rows={10}
                   required
                 ></textarea>
