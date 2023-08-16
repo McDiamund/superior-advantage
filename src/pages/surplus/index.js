@@ -105,8 +105,7 @@ function Surplus() {
               <input
                 type="hidden"
                 name="access_key"
-                value="536ca047-89c1-4886-acd7-12d2c997d279
-                "
+                value="536ca047-89c1-4886-acd7-12d2c997d279"
               />
 
               <div style={{ display: "flex", width: "100%" }}>
