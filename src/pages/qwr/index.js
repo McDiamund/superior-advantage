@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import states from 'states-us';
 
 function QWR() {
 
@@ -98,6 +99,26 @@ function QWR() {
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
                   <input type="email" name="email" placeholder="Email" required />
+                </div>
+              </div>
+
+              <div style={{ display: "flex", width: "100%" }}>
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>Address</label>
+                  <input name="address" placeholder="123 Main St." type="text" required />
+                </div>
+
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>State</label>
+                  <select name="state" placeholder="State" required>
+                    <option value="" disabled selected>State</option>
+                    {states.map((x, index) => (
+                      <option key={index} value={x.abbreviation}>
+                        {x.name}
+                      </option>
+                      ))}
+                  </select>
+                  {/* <input type="email" name="state" placeholder="State" required /> */}
                 </div>
               </div>
 

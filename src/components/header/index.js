@@ -33,7 +33,7 @@ function Header() {
             <li><Link to="/"><p>HOME</p></Link></li>
             <li><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
             <li><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
-            <li><Link to="/qwr"><p>QWR</p></Link></li>
+            <li><Link to="/qwr"><p>SHORT SALES</p></Link></li>
             <li><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
             <li className={styles.flexBar} style={{ flexGrow: "1"}}></li>
             <li><p>478-862-9533</p></li>
@@ -48,7 +48,7 @@ function Header() {
               <li onClick={handleMenuToggle}><Link to="/"><p>HOME</p></Link></li>
               <li onClick={handleMenuToggle}><Link to="/buyers"><p>BUYING A HOME</p></Link></li>
               <li onClick={handleMenuToggle}><Link to="/sellers"><p>SELLING A HOME</p></Link></li>
-              <li onClick={handleMenuToggle}><Link to="/qwr"><p>QWR</p></Link></li>
+              <li onClick={handleMenuToggle}><Link to="/qwr"><p>SHORT SALES</p></Link></li>
               <li onClick={handleMenuToggle}><Link to="/surplus"><p>SURPLUS FUNDS</p></Link></li>
             </ul>
 

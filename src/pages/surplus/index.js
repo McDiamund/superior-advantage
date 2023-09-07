@@ -1,13 +1,5 @@
 import styles from "./index.module.css";
-import downArrow from "assets/down-arrow.svg";
-import realtorLogo from "assets/realtor-logo.png";
-import equalHousing from "assets/equal-housing.webp";
-import surplusAsset from "assets/surplus.png";
-import JR from "assets/JR.png";
-import RT from "assets/RT.jpg";
-import DG from "assets/DG.jpg";
-import AE from "assets/AE.jpg";
-import ET from "assets/1649097022047.jfif";
+import states from 'states-us';
 
 function Surplus() {
   const scrollDown = () => {
@@ -101,7 +93,7 @@ function Surplus() {
               questions.{" "}
             </p>
 
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST" style={{marginBottom: "20px"}}>
               <input
                 type="hidden"
                 name="access_key"
@@ -117,6 +109,26 @@ function Surplus() {
                 <div className={styles.formInput} style={{ width: "50%" }}>
                   <label>Email</label>
                   <input type="email" name="email" placeholder="Email" required />
+                </div>
+              </div>
+
+              <div style={{ display: "flex", width: "100%" }}>
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>Address</label>
+                  <input name="address" placeholder="123 Main St." type="text" required />
+                </div>
+
+                <div className={styles.formInput} style={{ width: "50%" }}>
+                  <label>State</label>
+                  <select name="state" placeholder="State" required>
+                    <option value="" disabled selected>State</option>
+                    {states.map((x, index) => (
+                      <option key={index} value={x.abbreviation}>
+                        {x.name}
+                      </option>
+                      ))}
+                  </select>
+                  {/* <input type="email" name="state" placeholder="State" required /> */}
                 </div>
               </div>
 
